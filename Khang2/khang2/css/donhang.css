@@ -1,0 +1,63 @@
+.donhang{ 
+    position: relative;
+    display: flex;
+    padding: 30px;
+    width: 500px;
+    height: 80px;
+    background-color: rgb(155, 155, 155);
+    float: left;
+    margin: 30px;
+    left: 150px;
+    justify-content: center;
+}
+.donhang a{
+    text-decoration: none;
+    color: black;
+}
+.donhang:hover{
+    background-color: #466281;
+   
+}
+
+
+
+.madonhang{
+    position: relative;
+   margin-left: 1100px;
+     
+}
+.chitietdonhang{
+    position: relative;
+    
+    width: 60%;
+   
+    height: 200px;
+    
+}
+.chitietdonhang tr td {
+    font-weight: bold;
+}
+.thongtindonhang{
+    position: relative;
+    width: 60%;
+   
+
+}
+.thongtindonhang table{
+    width: 100%;
+}
+.thongtindonhangtb tr td {
+    border:2px solid #ccc;
+    border-top: none;
+   border-left: none;
+}
+.thongtindonhangtb{
+    border-collapse:collapse;
+    text-align: center;
+   
+} 
+.thongtindonhangtb tr{
+    height: 35px;
+}
+
+

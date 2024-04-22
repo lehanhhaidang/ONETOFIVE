@@ -1,0 +1,401 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* base*/
+
+:root {
+  --primary-color: #233d5a;
+  --while-color: #fff;
+  --black-color: #000;
+  --boder-color: #cecdcd;
+  --base-color: #cfdded;
+  --button-color: #233d5a;
+  --textbt-color: #fff;
+  --textbd-color: #000;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+
+/* Trang chủ */
+
+
+/* CSS để tạo lịch */
+
+.containerTC {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8em;
+}
+
+.TCLeft {
+  float: left;
+  width: 30%;
+  margin-top: 110px;
+  background-color: var(--base-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  padding: 10px;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.month {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.day {
+  text-align: center;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.current-day {
+  background-color: #ccc;
+  /* Màu nền để nổi bật */
+}
+
+.TCRight {
+  float: left;
+  width: 70%;
+  margin-top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10%;
+}
+
+.TCRight-func {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.TCRight-func a {
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+  background-color: var(--base-color);
+  /* Màu nền cho các liên kết */
+  color: var(--textbd-color);
+  /* Màu chữ cho các liên kết */
+  border: 1px solid var(--border-color);
+  /* Đường viền cho các liên kết */
+  border-radius: 5px;
+  /* Bo góc cho các liên kết */
+  text-align: center;
+  font-weight: bold;
+  width: 350px;
+  height: 80px;
+}
+
+.TCRight-func.BM {
+  position: relative;
+}
+
+.TCRight-func.BM::before {
+  content: attr(data-count);
+  /* Lấy số lượng biểu mẫu từ thuộc tính data-count */
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.TCRight-kho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base-color);
+  width: 720px;
+  height: 500px;
+  margin-left: 20px;
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+
+.TCRight-kho a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.TCRight-kho img {
+  display: flex;
+  width: 680px;
+  height: 420px;
+  margin-bottom: 10px;
+  /* Khoảng cách giữa ảnh và chữ "Kho" */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.TCRight-kho span {
+  font-weight: bold;
+  color: var(--textbd-color);
+  margin-top: 30px;
+}
+
+.home-page-footer {
+  margin-top: 0;
+  /* Vô hiệu hóa margin-top chỉ trong trang chủ */
+}
+
+
+/* kho*/
+
+main h1 {
+  color: var(--black-color);
+}
+
+.kho {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kho-sub {
+  width: 500px;
+  border: 1px solid black;
+  height: 90px;
+  margin: 0 40px;
+  /* Khoảng cách giữa các phần tử kho */
+  margin-top: 30px;
+  display: flex;
+  /* Sử dụng display: flex */
+  align-items: center;
+  /* Căn giữa theo chiều cao */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  background-color: var(--base-color);
+  border-color: var(--boder-color);
+}
+
+a .kho-sub {
+  font-size: 1.6em;
+  color: var(--textbd-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* chi tiết kho*/
+
+main h2 {
+  float: left;
+  width: 100%;
+  text-align: right;
+  padding: 0 10% 20px 0;
+}
+
+.warehouse {
+  width: 84%;
+  float: left;
+  margin: 0 8%;
+}
+
+.warehouse-information p {
+  font-size: 1.6em;
+  padding: 15px 0 0 15px;
+}
+
+.listproduct table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1.6em;
+  border-bottom: 1px solid var(--boder-color);
+}
+
+.listproduct table thead {
+  background-color: var(--base-color);
+}
+
+.listproduct td {
+  padding: 8px;
+  text-align: left;
+}
+
+.listproduct th {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid var(--boder-color);
+}
+
+.listproduct tbody tr td {
+  border-left: 1px solid var(--boder-color);
+  border-right: 1px solid var(--boder-color);
+  text-align: center;
+}
+
+
+/* nguyên vật liệu, thành phẩm*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.materials,
+.finishedproduct {
+  width: 40%;
+}
+
+.materials {
+  margin-right: 2%;
+}
+
+.finishedproduct {
+  margin-left: 2%;
+}
+
+.materials-list,
+.finishedproduct-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Chia thành 2 cột bằng nhau */
+  gap: 10px;
+  /* Khoảng cách giữa các thẻ a */
+  text-align: center;
+}
+
+.materials-list a,
+.finishedproduct-list a {
+  border: 1px solid var(--boder-color);
+  text-decoration: none;
+  font-size: 1.8em;
+  padding: 10px 0;
+  background-color: var(--base-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 235px;
+}
+
+.materials-list a img,
+.finishedproduct-list a img {}
+
+.materials-list a img,
+.finishedproduct-list a img {
+  width: 170px;
+  height: 190px;
+  padding-bottom: 15px;
+}
+
+
+/* CHI TIẾT NVL - TP*/
+
+.back {
+  float: right;
+  margin-top: 30px;
+  margin-right: 8%;
+  margin-bottom: 40px;
+}
+
+.back button {
+  background-color: var(--button-color);
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  color: var(--while-color);
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+
+.cancel {
+  float: right;
+  margin-top: 30px;
+  margin-right: 10%;
+  margin-bottom: 40px;
+}
+
+.cancel button {
+  background-color: rgb(80, 124, 210);
+  padding: 20px 50px;
+  border: none;
+  cursor: pointer;
+  color: var(--while-color);
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+
+.create {
+  float: right;
+  margin-top: 30px;
+  margin-right: 35%;
+  margin-bottom: 40px;
+}
+
+.create button {
+  background-color: var(--button-color);
+  padding: 20px 50px;
+  border: none;
+  cursor: pointer;
+  color: var(--while-color);
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+
+.bieumau {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bieumau-sub {
+  width: 500px;
+  border: 1px solid black;
+  height: 90px;
+  margin: 0 40px;
+  /* Khoảng cách giữa các phần tử kho */
+  margin-top: 30px;
+  display: flex;
+  /* Sử dụng display: flex */
+  align-items: center;
+  /* Căn giữa theo chiều cao */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  background-color: var(--base-color);
+  border-color: var(--boder-color);
+}
+
+.bieumau-sub a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: var(--textbd-color);
+}
+.noidung {
+  text-align: center; /* Căn giữa theo chiều ngang */
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}

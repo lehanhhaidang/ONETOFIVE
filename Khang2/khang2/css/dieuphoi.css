@@ -1,0 +1,59 @@
+.tb{
+    background-color: #9ea1ae;
+    border-radius: 40px;
+    height: 40px;
+    
+    
+}
+.tb a{
+    text-decoration: none;
+    color: #000;
+    
+}
+.vertical-menu {
+    list-style-type: none; /* Loại bỏ dấu chấm trước mục */
+    padding: 0;
+    width: 200px; /* Độ rộng của menu dọc */
+    background-color: #ffffff; /* Màu nền của menu */
+    border-right-color: #000;
+    border-right: solid 2px;
+}
+
+.vertical-menu li {
+    text-align: center; /* Căn giữa nội dung mỗi mục */
+    padding: 10px 0; /* Khoảng cách giữa các mục */
+}
+
+.vertical-menu li a {
+    color: #0c0808; /* Màu chữ cho các mục */
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+    display: block; /* Để mục menu chiếm toàn bộ chiều rộng của menu */
+}
+
+.vertical-menu li:hover {
+    background-color: #bfbbbb; /* Màu nền khi di chuột qua mục menu */
+}
+/* .dieuphoi-left{
+    min-height: max-content;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 500px;
+    margin-left: 40px;
+    float: left;
+}
+.dieuphoi-right{
+    width: 70%;
+    min-height: max-content;
+    min-height: 400px;
+    float: left;
+
+}
+
+.dieuphoi-right table{
+min-width: max-content;
+min-width: 100%;
+height: auto;
+
+} */

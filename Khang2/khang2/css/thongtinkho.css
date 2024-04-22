@@ -1,0 +1,59 @@
+.thongtinkho{ 
+    position: relative;
+    display: flex;
+    padding: 30px;
+    width: 500px;
+    height: 80px;
+    background-color: rgb(155, 155, 155);
+    float: left;
+    margin: 30px;
+    left: 150px;
+    justify-content: center;
+}
+.thongtinkho a{
+    text-decoration: none;
+    color: black;
+}
+.thongtinkho:hover{
+    background-color: #466281;
+   
+}
+
+
+
+.makho{
+    position: relative;
+   margin-left: 1100px;
+     
+}
+.chitietkho{
+    position: relative;
+    
+    width: 60%;
+   
+    height: 200px;
+    
+}
+
+.chitietkho{
+    position: relative;
+    width: 60%;
+   
+
+}
+.chitietkho table{
+    width: 100%;
+}
+.thongtinkhotb tr td {
+    border:2px solid #ccc;
+    border-top: none;
+   border-left: none;
+}
+.thongtinkhotb{
+    border-collapse:collapse;
+    text-align: center;
+   
+} 
+.thongtinkhotb tr{
+    height: 35px;
+}

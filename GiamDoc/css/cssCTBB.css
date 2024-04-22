@@ -1,0 +1,66 @@
+
+  /* chi tiết kho*/
+  main h2{
+    float: left;
+    width: 100%;
+    text-align: right;
+    padding: 0 10% 20px 0;
+  }
+
+  .warehouse{
+    width: 84%;
+    float: left;
+    margin: 0 8%;
+  }
+
+  .warehouse-information p{
+    font-size: 1.6em;
+    padding: 15px 0 0 15px;
+  }
+
+.listproduct table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.6em;
+    border-bottom: 1px solid var(--boder-color);
+}
+
+.listproduct table thead{
+  background-color: var(--base-color);
+}
+
+.listproduct  td {
+    padding: 8px;
+    text-align: left;
+}
+
+.listproduct th{
+text-align: center;
+padding: 8px;
+border: 1px solid var(--boder-color);
+}
+
+.listproduct tbody tr td{
+border-left: 1px solid var(--boder-color);
+border-right: 1px solid var(--boder-color);
+}
+
+
+/* CHI TIẾT NVL - TP*/
+.back{
+  float: right;
+  margin-top: 30px;
+  margin-right: 8%;
+  margin-bottom: 40px;
+}
+
+.back button{
+  background-color: var(--button-color);
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  color: var(--while-color);
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}

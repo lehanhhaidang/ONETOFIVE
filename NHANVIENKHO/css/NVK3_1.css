@@ -1,0 +1,598 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* base*/
+  :root {
+  --primary-color: #8BCAC8;
+  --while-color: #fff;
+  --black-color: #000;
+  --text-color: #323131;
+  --boder-color: #dbdbdb;
+  }
+  html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  }
+  
+  
+  /*main*/
+  #header{
+  width: 100%;
+  height: 110px;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  }
+  
+  .logo-img{
+  width: 110px;
+  height: 105px;
+  float: left;
+  position: absolute;
+  left: 6%;
+  padding-top: 5px;
+  }
+  
+  
+  .search{
+  margin-top: 38px;
+  width: 330px;
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 15%;
+  font-size: 15px;
+  }
+  .search-btn
+  {
+  padding: 5px;
+  width: 330px;
+  border: 1.5px solid var(--text-color);
+  height: 35px;
+  }
+  .search-icon{
+  padding-right: 30px;
+  padding: 5px;
+  border-radius: 30px;
+  border-color: var(--text-color);
+  background-color: var(--primary-color);
+  }
+  
+  .fa-search {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  }
+  
+  .user-icon,
+  .fa-search{
+  cursor: pointer;
+  }
+  .icon {
+  font-size: 22px;
+  color: var(--text-color);
+  position: absolute;
+  top: 37%;
+  right: 7%;
+  }
+  
+  .cart-icon,
+  .user-icon {
+  display: inline;
+  padding: 10px;
+  color: var(--text-color);
+  }
+  .fa-user:before{
+  color: var(--text-color);
+  }
+  .nav-container {
+  position: absolute;
+  top: 50%; /* Đưa menu lên giữa theo chiều cao */
+  transform: translateY(-50%);
+  left: 20%;
+  }
+  
+  .nav {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Chuyển menu thành dạng ngang */
+  }
+  
+  .nav li {
+  display: inline;
+  position: relative;
+  }
+  
+  .nav li a {
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 1.7em;
+  color: var(--text-color);
+  line-height: 50px;
+  display: block;
+  width: max-content;
+  }
+  
+  .nav li a:hover {
+  opacity: 0.8;
+  }
+  
+  /* Menu con (Submenu) */
+  .nav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  }
+  
+  .nav li:hover ul {
+  display: block;
+  }
+  
+  .nav li ul li {
+  display: block;
+  }
+  
+  .nav li ul li a {
+  color: #333;
+  }
+  
+  .nav li ul li a:hover {
+  background-color: #eee;
+  }
+  /* footer*/
+  footer{
+  width: 100%;
+  height:350px;
+  background-color: var(--primary-color);
+  float: left;
+  color: var(--text-color);
+  }
+  
+  .policy,
+  .contact {
+  width: 30%;
+  }
+  
+  .policy,
+  .contact ,
+  .CustomerCare{
+  height: auto;
+  text-align: center;
+  color: var(--text-color);
+  text-align: center;
+  float: left;
+  }
+  .CustomerCare{
+  width: 40%;
+  }
+  
+  .policy-title,
+  .contact-title,
+  .CustomerCare-title{
+  font-size: 1.8em;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 100%;
+  }
+  .policy-information a,
+  .contact-information {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: var(--text-color);
+  }
+  
+  .policy-information a,
+  .contact-information p{
+  line-height: 40px;
+  }
+  
+  .Community-title{
+  font-size: 1.8em;
+  margin-top: 25px;
+  padding-bottom: 20px;
+  }
+  .Community-icon{
+  color: var(--text-color);
+  font-size: 35px;
+  padding-right: 30px;
+  }
+  .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  }
+  .body {
+  padding: 15px 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #000;
+  
+  }
+  .input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  }
+  .labelInput {
+  min-width: 150px;
+  font-size: 18px;
+  }
+  .input {
+  width: 240px;
+  border-radius: 5px;
+  height: 30px;
+  }
+  
+  .title{
+  align-items: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+  }
+  .codeForm{
+  align-self: flex-end;
+  font-size: 14px;
+  }
+  
+  .custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: white;
+  padding: 10px 20px;
+  }
+  
+  .custom-cell {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #D9D9D9;
+  text-align: center;
+  vertical-align: middle;
+  }
+  .btn{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .buttonCancel, .buttonCreate{
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  }
+  
+  .buttonCancel{
+  background-color: #FF5757;
+  border-color: #FF5757;
+  }
+  .buttonCreate{
+  background-color: #8BCAC8;
+  border-color: #8BCAC8;
+  }
+  
+  .nsx, .nhh{
+  width: 100px;
+  height: 50px;
+  border: none;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* base*/
+  :root {
+  --primary-color: #233d5a;
+  --while-color: #fff;
+  --black-color: #000;
+  --boder-color: #dbdbdb;
+  --base-color: #cfdded;
+  --button-color:#233d5a;
+  --textbt-color:#fff;
+  --textbd-color:#000;
+  }
+  
+  html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Trang chủ */
+   /* CSS để tạo lịch */
+   .containerTC {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8em;
+  }
+   .TCLeft {
+    float: left;
+    width: 30%;
+    margin-top: 110px;
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .calendar {
+    padding: 10px;
+    width: 90%;
+    margin-top: 30px;
+  }
+  
+  .month {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .day {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 5px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .current-day {
+    background-color: #ccc; /* Màu nền để nổi bật */
+  }
+  
+  
+  .TCRight {
+    float: left;
+    width: 70%;
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+  }
+  
+  .TCRight-func {
+    margin-left: 20px;
+    margin-top: 20px;
+    
+  }
+  
+  .TCRight-func a {
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    background-color: var(--base-color); /* Màu nền cho các liên kết */
+    color: var(--textbd-color); /* Màu chữ cho các liên kết */
+    border: 1px solid var(--border-color); /* Đường viền cho các liên kết */
+    border-radius: 5px; /* Bo góc cho các liên kết */
+    text-align: center;
+    font-weight: bold;
+    width: 350px;
+    height: 80px;
+  }
+  
+  
+  .TCRight-func.BM {
+    position: relative;
+  }
+  
+  .TCRight-func.BM::before {
+    content: attr(data-count); /* Lấy số lượng biểu mẫu từ thuộc tính data-count */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  
+  .TCRight-kho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base-color);
+  width: 720px;
+  height: 500px;
+  margin-left: 20px;
+  font-size: 1.6em;
+  margin-top: 20px;
+  }
+  
+  .TCRight-kho a{
+  text-decoration: none;
+  text-align: center;
+  }
+  .TCRight-kho img {
+  display: flex;
+  width: 680px;
+  height: 420px;
+  margin-bottom: 10px; /* Khoảng cách giữa ảnh và chữ "Kho" */
+  justify-content: center;
+  margin-bottom: 20px;
+  }
+  
+  .TCRight-kho span {
+  font-weight: bold;
+  color: var(--textbd-color);
+  margin-top: 30px;
+  }
+  
+  .home-page-footer {
+    margin-top: 0; /* Vô hiệu hóa margin-top chỉ trong trang chủ */
+  }
+  /* kho*/
+  
+  main h1{
+  color: var(--black-color);
+  }
+  
+  .kho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .kho-sub {
+    width: 500px;
+    border: 1px solid black;
+    height: 90px;
+    margin: 0 40px; /* Khoảng cách giữa các phần tử kho */
+    margin-top: 30px;
+    display: flex; /* Sử dụng display: flex */
+    align-items: center; /* Căn giữa theo chiều cao */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    background-color: var(--base-color);
+    border-color: var(--boder-color);
+  }
+  
+  .kho-sub a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: var(--textbd-color);
+  }
+  
+  /* chi tiết kho*/
+  main h2{
+    float: left;
+    width: 100%;
+    text-align: right;
+    padding: 0 10% 20px 0;
+  }
+  
+  .warehouse{
+    width: 84%;
+    float: left;
+    margin: 0 8%;
+  }
+  
+  .warehouse-information p{
+    font-size: 1.6em;
+    padding: 15px 0 0 15px;
+  }
+  
+  .listproduct table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.6em;
+    border-bottom: 1px solid var(--boder-color);
+  }
+  
+  .listproduct table thead{
+  background-color: var(--base-color);
+  }
+  
+  .listproduct  td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .listproduct th{
+  text-align: center;
+  padding: 8px;
+  border: 1px solid var(--boder-color);
+  }
+  
+  .listproduct tbody tr td{
+  border-left: 1px solid var(--boder-color);
+  border-right: 1px solid var(--boder-color);
+  }
+  
+  /* nguyên vật liệu, thành phẩm*/
+  
+  .container{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  }
+  .materials, .finishedproduct{
+  width: 40%;
+  }
+  
+  .materials{
+  margin-right: 2%;
+  }
+  
+  .finishedproduct{
+  margin-left: 2%;
+  }
+  
+  .materials-list, .finishedproduct-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Chia thành 2 cột bằng nhau */
+  gap: 10px; /* Khoảng cách giữa các thẻ a */
+  text-align: center;
+  }
+  
+  
+  .materials-list a, .finishedproduct-list a {
+  border: 1px solid var(--boder-color);
+  text-decoration: none;
+  font-size: 1.8em;
+  padding: 10px 0;
+  background-color: var(--base-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 235px;
+  }
+  
+  
+  .materials-list a img,
+  .finishedproduct-list a img {
+  }
+  
+  .materials-list a img, .finishedproduct-list a img {
+  width: 170px;
+  height: 190px;
+  padding-bottom: 15px;
+  }
+  
+  
+  /* CHI TIẾT NVL - TP*/
+  .back{
+  float: right;
+  margin-top: 30px;
+  margin-right: 8%;
+  margin-bottom: 40px;
+  }
+  
+  .back button{
+  background-color: var(--button-color);
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  color: var(--while-color);
+  font-size: 1.6em;
+  margin-bottom: 40px;
+  }

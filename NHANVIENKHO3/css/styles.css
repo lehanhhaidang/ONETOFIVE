@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* base*/
+:root {
+  --primary-color: #233d5a;
+  --while-color: #fff;
+  --black-color: #000;
+  --boder-color: #cecdcd;
+  --base-color: #cfdded;
+  --button-color:#233d5a;
+  --textbt-color:#fff;
+  --textbd-color:#000;
+  --icon-color:#ede8e8;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/*main*/
+#header{
+    width: 100%;
+    height: 110px;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.logo-img{
+    width: 110px;
+    height: 105px;
+    float: left;
+    position: absolute;
+    left: 6%;
+    padding-top: 5px;
+}
+
+.search {
+    margin-top: 9px;
+    width: 330px;
+    position: absolute;
+	left: 12%;
+   	 /* Điều chỉnh khoảng cách từ cạnh phải */
+    font-size: 15px;
+}
+.search-btn
+{
+    padding: 5px;
+    width: 330px;
+    height: 35px;
+}
+.search-icon{
+    padding-right: 30px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.fa-search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+.user-icon,
+.fa-search{
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 22px;
+    position: absolute;
+    top: 37%;
+    right: 7%;
+  }
+
+  .user-icon {
+    display: inline;
+    padding: 10px;
+  }
+
+  .fa-user:before{
+    color: var(--icon-color);
+  }
+  .nav-container {
+    position: absolute;
+    top: 50%; /* Đưa menu lên giữa theo chiều cao */
+    transform: translateY(-50%); 
+    left: 50%; 
+  }
+  
+  .nav {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Chuyển menu thành dạng ngang */
+  }
+  
+  .nav li {
+    display: inline;
+    position: relative;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 1.8em;
+    color: var(--textbt-color);
+    line-height: 50px;
+    display: block;
+    width: max-content; 
+  }
+  
+  .nav li a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Menu con (Submenu) */
+  .nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid var(--boder-color);
+    
+  }
+  
+  .nav li:hover ul {
+    display: block;
+  }
+  
+  .nav li ul li {
+    display: block;
+
+  }
+  
+  .nav li ul li a {
+    color: var(--textbd-color);
+  }
+  
+  .nav li ul :hover {
+    background-color: #eee;
+  }
+
+ 
+  main h1{
+    text-align: center;
+    padding: 25px;
+    margin-top: 110px;
+    color: var(--textbd-color);
+  }
+
+/* footer*/
+footer{
+    width: 100%;
+    height:350px;
+    background-color: var(--primary-color);
+    float: left;
+    color: var(--textbt-color);
+    margin-top: 40px;
+}
+
+.policy,
+.contact {
+width: 30%;
+}
+
+.policy,
+.contact ,
+.CustomerCare{
+    height: auto;
+    text-align: center;
+    color: var(--text-color);
+    text-align: center;
+    float: left;
+}
+.CustomerCare{
+    width: 40%;
+}
+
+.policy-title,
+.contact-title,
+.CustomerCare-title{
+    font-size: 1.8em;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.policy-information a,
+.contact-information {
+font-size: 1.7em;
+text-decoration: none;
+color: var(--text-color);
+}
+
+.policy-information a,
+.contact-information p{
+    line-height: 40px;
+}
+
+.Community-title{
+    font-size: 1.8em;
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
+.Community-icon{
+    color: var(--text-color);
+    font-size: 35px;
+    padding-right: 30px;
+}
+

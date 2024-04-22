@@ -1,0 +1,155 @@
+section {
+     height: auto;
+    font-size: 1.8em;
+     margin-top: 150px;
+    font-family: 'Roboto', sans-serif;
+    
+    }
+h1 {
+ text-align: center;
+ }
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 850px;
+    margin-left: 450px;
+    margin-right: 150px;
+    padding: 5px;
+    
+ }
+
+.col {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+.row .col a {
+    
+    color: #000;
+    text-decoration: underline;
+    margin-left: 10px;
+    
+}
+
+.col a:hover {
+    color: #6e6262;
+}
+
+.actions a {
+    text-decoration: underline;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+.actions {
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* Cập nhật CSS cho biểu mẫu */
+form {
+    
+    margin: 0 auto;
+    text-align: left;
+}
+.noidung{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.field {
+    margin-top: 10px;
+}
+label {
+    display: block; /* Đảm bảo rằng mỗi nhãn nằm trên một hàng riêng */
+    margin: 10px;
+}
+label, input {
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+/*Nút quay lại*/
+.back{
+    float: right;
+    margin-top: 30px;
+    margin-right: 8%;
+    margin-bottom: 40px;
+  }
+  
+  .back button{
+    background-color: var(--button-color);
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    color: var(--while-color);
+    font-size: 1.6em;
+    margin-bottom: 40px;
+  }
+/* chi tiết kes hsx*/
+  main h2{
+    float: left;
+    width: 100%;
+    text-align: right;
+    padding: 0 10% 20px 0;
+  }
+
+  .warehouse{
+    width: 84%;
+    float: left;
+    margin: 0 8%;
+  }
+
+  .warehouse-information p{
+    padding: 15px 0 0 15px;
+  }
+
+  .listproduct table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+      
+    border-bottom: 1px solid var(--boder-color);
+}
+
+.listproduct table thead{
+  background-color: var(--base-color);
+}
+
+.listproduct  td {
+    padding: 8px;
+    text-align: left;
+}
+
+.listproduct th{
+text-align: center;
+padding: 8px;
+border: 1px solid var(--boder-color);
+}
+
+.listproduct tbody tr td{
+border-left: 1px solid var(--boder-color);
+border-right: 1px solid var(--boder-color);
+}
+.khung{
+    margin-left: 50px;
+     margin-right: 50px;
+}

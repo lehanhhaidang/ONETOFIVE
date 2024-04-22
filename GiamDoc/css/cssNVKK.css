@@ -1,0 +1,380 @@
+/*Lập phiếu kk*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .body {
+    padding: 15px 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #000;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .danhsach{
+    left: 5px;
+    flex-direction: row;
+    margin: 3px 0;
+    font-size: 18px;
+  }
+  .labelmakho{
+    min-width: 150px;
+    font-size: 18px;
+  }
+  
+  .labelInput {
+    min-width: 150px;
+    font-size: 18px;
+  }
+  .input {
+   width: 240px;
+   border-radius: 5px;
+   height: 30px;
+  }
+  
+  .title{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-left: 150px;
+  }
+
+
+  .codeForm{
+    align-self: flex-end;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .custom-cell {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #D9D9D9;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .btn{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttonCancel, .buttonCreate {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .buttonCancel{
+    background-color: red;
+    color: var(--while-color);
+  }
+  .buttonCreate{
+    background-color: rgb(47, 120, 222);
+    color: var(--while-color);
+  }
+  
+  .nsx, .nhh{
+    width: 100px;
+    height: 50px;
+    border: none;
+  }
+/*xem kho, xem phiếu*/
+  .pic_NVKK
+  { 
+    text-align: center;
+    display: flex;
+    float: left;
+    width: 100%;
+    margin-top: 120px;
+   
+    flex-wrap: wrap;
+    padding-left: 15%;
+  }
+  /*tiêu đề trang chủ*/
+.title1{
+  align-items: center;
+  text-align: center;
+  margin: 8px 250px 10px 400px; 
+}
+  
+    /*Nút back*/
+    .back{
+      float: right;
+      margin-top: 30px;
+      margin-right: 8%;
+      margin-bottom: 40px;
+    }
+    .back button{
+      background-color: var(--button-color);
+      padding: 14px 28px;
+      border: none;
+      cursor: pointer;
+      color: var(--while-color);
+      font-size: 1.6em;
+    }
+    
+    /*Nút back xemctbbkk*/
+    .back-link {
+      /*display: inline-block;*/
+      padding: 14px 28px;
+      /*border: 2px solid #4CAF50; /* Màu đường viền */
+      background-color: var(--button-color);
+      color: var(--while-color);
+      text-align: center;
+      /*text-decoration: none;*/
+      font-size: 1.6em;
+      cursor: pointer;
+      border: nonepx;
+  }
+  
+  
+
+
+    /* KHO*/
+
+main h1 {
+  color: var(--black-color);
+}
+
+.kho {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kho-sub {
+  width: 500px;
+  border: 1px solid black;
+  height: 90px;
+  margin: 0 40px;
+  /* Khoảng cách giữa các phần tử kho */
+  margin-top: 30px;
+  display: flex;
+  /* Sử dụng display: flex */
+  align-items: center;
+  /* Căn giữa theo chiều cao */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  background-color: var(--base-color);
+  border-color: var(--boder-color);
+}
+
+a .kho-sub {
+  font-size: 1.6em;
+  color: var(--textbd-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* chi tiết kho*/
+main h2 {
+  float: left;
+  width: 100%;
+  text-align: right;
+  padding: 0 10% 20px 0;
+}
+
+.warehouse {
+  margin-top: 180px;
+  width: 84%;
+  float: left;
+  margin: 0 8%;
+}
+
+.warehouse-information p {
+  font-size: 1.6em;
+  padding: 15px 0 0 15px;
+}
+
+.listproduct table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1.6em;
+  border-bottom: 1px solid var(--boder-color);
+}
+
+.listproduct table thead {
+  background-color: var(--base-color);
+}
+
+.listproduct td {
+  padding: 8px;
+  text-align: left;
+}
+
+.listproduct th {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid var(--boder-color);
+}
+
+.listproduct tbody tr td {
+  border-left: 1px solid var(--boder-color);
+  border-right: 1px solid var(--boder-color);
+}
+
+
+/* nguyên vật liệu, thành phẩm*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.materials,
+.finishedproduct {
+  width: 40%;
+}
+
+.materials {
+  margin-right: 2%;
+}
+
+.finishedproduct {
+  margin-left: 2%;
+}
+
+.materials-list,
+.finishedproduct-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Chia thành 2 cột bằng nhau */
+  gap: 10px;
+  /* Khoảng cách giữa các thẻ a */
+  text-align: center;
+}
+
+.materials-list a,
+.finishedproduct-list a {
+  border: 1px solid var(--boder-color);
+  text-decoration: none;
+  font-size: 1.8em;
+  padding: 10px 0;
+  background-color: var(--base-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 235px;
+}
+
+.materials-list a img,
+.finishedproduct-list a img {}
+
+.materials-list a img,
+.finishedproduct-list a img {
+  width: 170px;
+  height: 190px;
+  padding-bottom: 15px;
+}
+
+
+/* CHI TIẾT NVL - TP*/
+
+.back {
+  float: right;
+  margin-top: 30px;
+  margin-right: 8%;
+  margin-bottom: 40px;
+}
+
+.back button {
+  background-color: var(--button-color);
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  color: var(--while-color);
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+
+.cancel {
+  float: right;
+  margin-top: 30px;
+  margin-right: 10%;
+  margin-bottom: 40px;
+}
+
+.cancel button {
+  background-color: rgb(80, 124, 210);
+  padding: 20px 50px;
+  border: none;
+  cursor: pointer;
+  color: var(--while-color);
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+
+.create {
+  float: right;
+  margin-top: 30px;
+  margin-right: 35%;
+  margin-bottom: 40px;
+}
+
+.create button {
+  background-color: var(--button-color);
+  padding: 20px 50px;
+  border: none;
+  cursor: pointer;
+  color: var(--while-color);
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+
+.bieumau {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bieumau-sub {
+  width: 500px;
+  border: 1px solid black;
+  height: 90px;
+  margin: 0 40px;
+  /* Khoảng cách giữa các phần tử kho */
+  margin-top: 30px;
+  display: flex;
+  /* Sử dụng display: flex */
+  align-items: center;
+  /* Căn giữa theo chiều cao */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  background-color: var(--base-color);
+  border-color: var(--boder-color);
+}
+
+.bieumau-sub a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: var(--textbd-color);
+}
+    

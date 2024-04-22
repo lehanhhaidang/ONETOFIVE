@@ -1,0 +1,103 @@
+section {
+    height: auto;
+    font-size: 1.8em;
+    margin-top: 150px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.listproduct table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--boder-color);
+}
+
+.listproduct table thead {
+    background-color: var(--base-color);
+}
+
+.listproduct {
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 250px;
+}
+
+.listproduct td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid var(--boder-color);
+}
+
+.listproduct th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid var(--boder-color);
+}
+
+.listproduct tbody tr td {
+    border-left: 1px solid var(--boder-color);
+    border-right: 1px solid var(--boder-color);
+}
+
+.field {
+    margin-top: 10px;
+}
+
+.noidung {
+    max-width: 400px;
+    margin: 0 auto;
+    /* Thêm dòng này để căn giữa nội dung */
+}
+
+label {
+    display: block;
+    /* Đảm bảo rằng mỗi nhãn nằm trên một hàng riêng */
+    text-align: left;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.listproduct input {
+    width: 100%;
+    padding-right: 50px;
+    height: 30px;
+}
+
+label,
+input {
+    display: inline-block;
+}
+
+.btn {
+    margin-top: 10px;
+    font-size: 1.8em;
+    padding: 10px 20px;
+    /* Đặt giá trị padding để làm cho nút lớn hơn */
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+}
+
+.btn-reset {
+    background-color: #233d5a;
+    padding: 10px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-submit {
+    background-color: #39a867;
+    padding: 10px;
+    color: white;
+}
+/* CSS để tạo màu đỏ cho dấu sao */
+.required::before {
+    content: "* ";
+    color: red;
+}
